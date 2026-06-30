@@ -6,6 +6,7 @@ body {
     font-family: 'Comfortaa', sans-serif;
     margin: 0;
     background-color: #f3f6fd;
+    font-weight: 400;
 }
 
 .app {
@@ -73,4 +74,61 @@ body {
 
 .menu__add:hover {
     background: #eff2ff;
+}
+
+.content {
+    min-width: 900px;
+    padding: 45px;
+}
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 235px;
+}
+
+.progress__text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress__name {
+    font-size: 14px;
+    line-height: 100%;
+    color: #232360;
+}
+
+.progress__percent {
+    font-size: 12px;
+    line-height: 100%;
+    color: #768396;
+}
+
+.progress__bar {
+    width: 100%;
+    background: #e6e9ed;
+    border-radius: 4px;
+    height: 5px;
+    position: relative;
+}
+
+.progress__cover-bar {
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    border-radius: 4px;
+    background: #5051f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 100%;
+    color: #000000;
 }
