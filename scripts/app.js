@@ -18,6 +18,7 @@ const page = {
     },
     popup: {
         index: document.getElementById('add-habbit-popup'),
+        iconField: document.querySelector('.popup__form input[name="icon"]'),
     },
 };
 
@@ -146,6 +147,14 @@ function togglePopup() {
     } else {
         page.popup.index.classList.add('cover_hidden');
     }
+}
+
+/* working with habbits */
+function setIcon(context, icon) {
+    page.popup.iconField.value = icon;
+    const activeIcon = document.querySelector('.icon.icon_active');
+    activeIcon.classList.remove('icon_active');
+    context.classList.add('icon_active');
 }
 
 /* init */
